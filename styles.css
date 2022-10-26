@@ -1,3 +1,82 @@
-h1 {
-  color: goldenrod;
+@media screen and (max-width: 500px) {
+  .toolbar {
+    background: #3c3a39;
+    height: 46px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toolbar-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-left: 24px;
+    margin-bottom: 110px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .headline {
+    background-color: #1c1a19;
+    height: 90%;
+    background-image: url(Assets/bg.png);
+    background-position: 100% 290%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .content1 {
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin-left: 24px;
+    margin-top: 120px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+  }
+
+  .content2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 24px;
+    margin-top: 12px;
+    color: #fff5e1;
+  }
+  .content3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+    margin-right: 50px;
+    color: #ffffff;
+  }
+
+  .icons {
+    display: flex;
+    width: 40%;
+    height: 4%;
+    margin-left: 50px;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-right: 10%;
+    margin-top: 4%;
+  }
 }
