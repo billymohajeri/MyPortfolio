@@ -13,7 +13,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
     margin-left: 24px;
     margin-bottom: 110px;
   }
@@ -57,14 +57,14 @@
     color: #fff5e1;
   }
   .content3 {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-left: 24px;
     margin-right: 50px;
-    color: #ffffff;
+    color: #fff;
   }
 
   .icons {
