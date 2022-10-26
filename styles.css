@@ -79,4 +79,10 @@
     margin-right: 10%;
     margin-top: 4%;
   }
+
+  img:hover {
+    width: 110%;
+    border: #ff6b00 solid 2px;
+    border-radius: 10%;
+  }
 }
