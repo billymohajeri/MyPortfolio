@@ -8,7 +8,7 @@
   }
 
   .toolbar-text {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -35,7 +35,7 @@
   }
 
   .content1 {
-    font-family: "Crete Round";
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -47,7 +47,7 @@
   }
 
   .content2 {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -56,6 +56,7 @@
     margin-top: 12px;
     color: #fff5e1;
   }
+
   .content3 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
