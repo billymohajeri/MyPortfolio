@@ -4,7 +4,8 @@
 
 > Portfolio: setup and mobile first (Day 3 project)
 
-The very first step to creating portfolio website is to design first page of the mobile version based on the given templates.
+The very first step to creating portfolio website is to design first page
+of the mobile version based on the given templates.
 My choice was the second template:
 
 <img src="Assets/temple.jpg" width="20%" height="20%">
