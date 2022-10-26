@@ -1,0 +1,23 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "description": "Portfolio: setup and mobile first (Day 3 project)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billymohajeri/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billymohajeri/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/billymohajeri/MyPortfolio#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}
