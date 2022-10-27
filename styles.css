@@ -100,7 +100,7 @@ li {
 h1,
 h2,
 p {
-  margin: 0px;
+  margin: 0;
 }
 
 /* ----------------- First Project ---------------- */
@@ -158,7 +158,7 @@ p {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   border: none;
   align-items: center;
   padding: 12px;
@@ -169,7 +169,7 @@ p {
 }
 
 .first-project .title-post {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
