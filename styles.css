@@ -145,7 +145,7 @@ p {
 }
 
 .first-project > ul {
-  padding: 0px;
+  padding: 0;
   margin-bottom: 24px;
   margin-top: 24px;
 }
@@ -215,7 +215,7 @@ p {
   background: #ff6b00;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .other-projects > ul > li {
@@ -233,9 +233,8 @@ p {
 .other-projects > ul {
   margin-bottom: 22px;
   margin-left: 40px;
-  margin-top: 0px;
-  margin-bottom: 22px;
-  padding: 0px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .other-projects > .title-post {
@@ -260,7 +259,7 @@ p {
   margin-bottom: 12px;
   margin-left: 40px;
   margin-right: 40px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* ----------------- About Me ---------------- */
@@ -274,7 +273,7 @@ p {
 }
 
 .about-me > .primary-text {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -290,7 +289,7 @@ p {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 24px;
-  margin-top: 0px;
+  margin-top: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -310,7 +309,7 @@ p {
   font-size: 17px;
   line-height: 24px;
   border: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-me > hr {
@@ -328,7 +327,7 @@ p {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-me > h3 {
@@ -339,7 +338,7 @@ p {
   font-size: 22px;
   line-height: 43px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* ----------------- Contact ---------------- */
@@ -413,8 +412,9 @@ textarea::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
 }
+
 .gray-line {
   border: 1px solid #dfe1e6;
   width: 370px;
@@ -422,7 +422,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .contact > ul {
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: auto;
   margin-right: auto;
 }
