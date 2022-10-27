@@ -2,9 +2,9 @@
 
 # My Portfolio
 
-> Portfolio: setup and mobile first (Day 3 project)
+> Portfolio: finish mobile version (Day 4 project)
 
-The very first step to creating portfolio website is to design first page
+The next step to creating portfolio website is to complete design the rest of the pages
 of the mobile version based on the given templates.
 My choice was the second template:
 
