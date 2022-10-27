@@ -1,3 +1,7 @@
+body {
+  background-color: #e5e5e5;
+}
+
 .toolbar {
   background: #3c3a39;
   height: 46px;
@@ -15,26 +19,33 @@
   line-height: 24px;
   color: #fff;
   margin-left: 24px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  height: 6968px;
   width: 375px;
 }
 
 .headline {
+  display: flex;
+  flex-direction: column;
   background-color: #1c1a19;
-  height: 90%;
+  height: 590px;
   background-image: url(Assets/bg.svg);
-  background-position: 188px 250px;
-  background-size: 50%;
+  background-position: 225px 220px;
+  background-size: 40%;
   background-repeat: no-repeat;
 }
 
-.content1 {
+.projects {
+  background-color: #fff;
+  height: 3726px;
+}
+
+.headline > .primary-text {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +57,7 @@
   color: #ff6b00;
 }
 
-.content2 {
+.headline > .supporting-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -57,14 +68,14 @@
   color: #fff5e1;
 }
 
-.content3 {
+.headline > .description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-left: 24px;
-  margin-right: 50px;
+  margin-top: 12px;
   color: #fff;
 }
 
@@ -73,13 +84,7 @@ nav {
   margin-top: 4%;
 }
 
-img:hover {
-  width: 110%;
-  border: #ff6b00 solid 2px;
-  border-radius: 10%;
-}
-
-ul {
+.socials1 {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -90,4 +95,362 @@ ul {
 
 li {
   display: inline;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+/* ----------------- First Project ---------------- */
+
+.first-project > .title {
+  font-family: "Crete Round", serif;
+  color: #1c1a19;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.first-project > hr {
+  border: 1px solid #212121;
+  border-top: none;
+  margin-top: 30px;
+  width: 327px;
+}
+
+.first-project > img {
+  margin-top: 70px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.first-project {
+  margin-left: 24px;
+}
+
+.first-project > ul > li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.first-project > ul {
+  padding: 0px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.first-project > button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  border: none;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+}
+
+.first-project .title-post {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.first-project .supporting-text {
+  font-family: "Inter", sans-serif;
+  margin-right: 24px;
+  color: #091e42;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ----------------- Other Projects ---------------- */
+
+.other-projects {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Assets/other-projects.svg);
+  background-repeat: no-repeat;
+  background-size: 327px, 386px;
+  background-position: center;
+  height: 470px;
+}
+
+.other-projects > button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: auto;
+  color: #fff;
+  width: 327px;
+  height: 48px;
+  border: none;
+  background: #ff6b00;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.other-projects > ul > li {
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 12px;
+}
+
+.other-projects > ul {
+  margin-bottom: 22px;
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 22px;
+  padding: 0px;
+}
+
+.other-projects > .title-post {
+  margin-bottom: 12px;
+  margin-left: 40px;
+  text-align: left;
+  margin-top: 140px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.other-projects > .supporting-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #ffffff;
+}
+
+/* ----------------- About Me ---------------- */
+.about-me {
+  background: #1c1a19;
+  background-image: url(Assets/about-me-bg.svg);
+  background-repeat: no-repeat;
+  height: 2150px;
+  background-position-y: 25%;
+  background-position-x: right;
+}
+
+.about-me > .primary-text {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin-top: 120px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about-me > .description {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  margin-top: 0px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about-me > button {
+  width: 161px;
+  height: 48px;
+  margin-left: 24px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  color: #ffffff;
+}
+
+.about-me > hr {
+  border: 1px solid #fff;
+  border-top: none;
+  margin-top: 230px;
+  margin-bottom: 136px;
+  width: 327px;
+}
+
+.about-me > h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-me > h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ----------------- Contact ---------------- */
+
+.contact {
+  background-color: #fff;
+  height: 990px;
+}
+
+.contact > .primary-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 120px;
+  margin-bottom: 73px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.normal-text-box {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+  width: 327px;
+  margin-top: 39px;
+  margin-bottom: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 16px;
+  font-size: 15px;
+  padding-bottom: 14px;
+}
+
+textarea {
+  width: 327px;
+  height: 114px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  background-color: #fbf8f7;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #3c3a39;
+}
+
+.contact > button {
+  border: none;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 124px;
+  display: block;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.gray-line {
+  border: 1px solid #dfe1e6;
+  width: 370px;
+  border-top: none;
+}
+
+.contact > ul {
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socials2 {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.black-line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
+  display: block;
+}
+
+/* ----------------- Button Behaviour ---------------- */
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background: #e05304;
+  color: #f4f1f0;
+  border: none;
 }
