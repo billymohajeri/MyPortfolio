@@ -1,7 +1,7 @@
 .toolbar {
   background: #3c3a39;
   height: 46px;
-  width: 100%;
+  width: 375px;
   display: flex;
   justify-content: space-between;
 }
@@ -22,14 +22,14 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  width: 375px;
 }
 
 .headline {
   background-color: #1c1a19;
   height: 90%;
-  background-image: url(Assets/bg.png);
-  background-position: 100% 290%;
+  background-image: url(Assets/bg.svg);
+  background-position: 188px 250px;
   background-size: 50%;
   background-repeat: no-repeat;
 }
@@ -90,6 +90,4 @@ ul {
 
 li {
   display: inline;
-
-  /* margin-left: 0px; */
 }
