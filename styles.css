@@ -2,6 +2,21 @@ body {
   background-color: #e5e5e5;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  height: 6968px;
+  width: 375px;
+}
+
+/* ----------------- Toolbar ---------------- */
+
 .toolbar {
   background: #3c3a39;
   height: 46px;
@@ -22,12 +37,12 @@ body {
   margin-top: 16px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  height: 6968px;
-  width: 375px;
+nav {
+  margin-right: 5%;
+  margin-top: 4%;
 }
+
+/* ----------------- Headline ---------------- */
 
 .headline {
   display: flex;
@@ -38,11 +53,6 @@ body {
   background-position: 225px 220px;
   background-size: 40%;
   background-repeat: no-repeat;
-}
-
-.projects {
-  background-color: #fff;
-  height: 3726px;
 }
 
 .headline > .primary-text {
@@ -79,11 +89,6 @@ body {
   color: #fff;
 }
 
-nav {
-  margin-right: 5%;
-  margin-top: 4%;
-}
-
 .socials1 {
   list-style-type: none;
   display: flex;
@@ -93,17 +98,16 @@ nav {
   margin-left: 10px;
 }
 
-li {
+.socials1 > li {
   display: inline;
 }
 
-h1,
-h2,
-p {
-  margin: 0;
-}
-
 /* ----------------- First Project ---------------- */
+
+.projects {
+  background-color: #fff;
+  height: 3726px;
+}
 
 .first-project > .title {
   font-family: "Crete Round", serif;
@@ -142,12 +146,14 @@ p {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
+  display: inline;
 }
 
 .first-project > ul {
   padding: 0;
   margin-bottom: 24px;
   margin-top: 24px;
+  list-style: none;
 }
 
 .first-project > button {
@@ -228,6 +234,7 @@ p {
   line-height: 20px;
   color: #fff;
   margin-right: 12px;
+  display: inline;
 }
 
 .other-projects > ul {
@@ -267,7 +274,7 @@ p {
   background: #1c1a19;
   background-image: url(Assets/about-me-bg.svg);
   background-repeat: no-repeat;
-  height: 2150px;
+  height: 1800px;
   background-position-y: 25%;
   background-position-x: right;
 }
@@ -315,30 +322,43 @@ p {
 .about-me > hr {
   border: 1px solid #fff;
   border-top: none;
-  margin-top: 230px;
+  margin-top: 205px;
   margin-bottom: 136px;
   width: 327px;
 }
 
-.about-me > h2 {
+.skill-list-title {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  padding-left: 0;
   text-align: center;
   color: #fff;
+  margin-bottom: 44px;
 }
 
-.about-me > h3 {
+.skill-list-item {
   font-family: "Inter", sans-serif;
   font-style: normal;
   margin-bottom: 32px;
+  padding-left: 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-  text-align: center;
   color: #fff;
+}
+
+.about-me > ul,
+.about-me > ul > ul {
+  list-style: none;
+}
+
+.about-me > ul > li {
+  margin-bottom: 30px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 /* ----------------- Contact ---------------- */
@@ -421,17 +441,14 @@ textarea::-webkit-input-placeholder {
   border-top: none;
 }
 
-.contact > ul {
-  padding-left: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .socials2 {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 50%;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .black-line {
