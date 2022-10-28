@@ -4,9 +4,7 @@
 
 > Portfolio: finish mobile version (Day 4 project)
 
-The next step to creating portfolio website is to complete design the rest of the pages
-of the mobile version based on the given templates.
-My choice was the second template:
+This is a website containing a collection of Projects I have worked on, my technical & professional skills, and how to contact me.
 
 <img src="Assets/template.jpg" width="20%" height="20%">
 
