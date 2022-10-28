@@ -2,13 +2,11 @@
 
 # My Portfolio
 
-> Portfolio: setup and mobile first (Day 3 project)
+> Portfolio: finish mobile version (Day 4 project)
 
-The very first step to creating portfolio website is to design first page
-of the mobile version based on the given templates.
-My choice was the second template:
+This is a website containing a collection of Projects I have worked on, my technical & professional skills, and how to contact me.
 
-<img src="Assets/temple.jpg" width="20%" height="20%">
+<img src="Assets/template.jpg" width="20%" height="20%">
 
 [Link to template in Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27)
 
