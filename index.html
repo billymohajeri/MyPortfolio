@@ -84,7 +84,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
 
         <article class="other-projects">
@@ -98,7 +98,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
         <article class="other-projects">
           <h1 class="title-post">Profesional Art Printing Data</h1>
@@ -111,7 +111,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
         <article class="other-projects">
           <h1 class="title-post">Profesional Art Printing Data</h1>
@@ -124,7 +124,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
         <article class="other-projects">
           <h1 class="title-post">Profesional Art Printing Data</h1>
@@ -137,7 +137,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
         <article class="other-projects">
           <h1 class="title-post">Profesional Art Printing Data</h1>
@@ -150,7 +150,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
         <article class="other-projects">
           <h1 class="title-post">Profesional Art Printing Data</h1>
@@ -163,7 +163,7 @@
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button>See Project</button>
+          <button class="my-buttons">See Project</button>
         </article>
       </section>
 
@@ -175,12 +175,12 @@
           like what you see and have a project you need coded, don’t hestiate to
           contact me.
         </p>
-        <button>Get My Resume</button>
+        <button class="my-buttons">Get My Resume</button>
         <hr />
         <ul class="skill-list-title">
           <li>🔶 Language</li>
           <ul class="skill-list-item">
-            <li >Javascript</li>
+            <li>Javascript</li>
             <li>Ruby</li>
             <li>Html</li>
             <li>Css</li>
@@ -209,25 +209,40 @@
       </section>
 
       <section class="contact">
-        <h2 class="primary-text">
-          I'm always <br />
-          interested in hearing about new projects, so if you'd like to chat
-          please get in touch.
-        </h2>
-        <input type="text" placeholder="Full name" class="normal-text-box" />
-        <input
-          type="email"
-          placeholder="Email address"
-          class="normal-text-box"
-        />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Enter text here"
-        ></textarea>
-        <button>Get in touch</button>
+        <form action="https://formspree.io/f/mlevordr" method="POST">
+          <h2 class="primary-text">
+            I'm always <br />
+            interested in hearing about new projects, so if you'd like to chat
+            please get in touch.
+          </h2>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+            class="normal-text-box"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="normal-text-box"
+            required
+          />
+          <textarea
+            
+            name="comment"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+            maxlength="500"
+            required
+          ></textarea>
+          <button type="submit" class="my-buttons">Get in touch</button>
+        </form>
+
         <hr class="gray-line" />
         <ul class="socials2">
           <li>

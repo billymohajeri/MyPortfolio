@@ -196,8 +196,8 @@ nav {
 /* ----------------- Other Projects ---------------- */
 
 .other-projects {
-  float: left;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   background-image: url(Assets/other-projects.svg);
   background-repeat: no-repeat;
   background-size: 327px, 386px;
@@ -213,7 +213,7 @@ nav {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  /* position: auto; */
+  position: auto;
   color: #fff;
   width: 327px;
   height: 48px;
@@ -270,6 +270,7 @@ nav {
 }
 
 /* ----------------- About Me ---------------- */
+
 .about-me {
   background: #1c1a19;
   background-image: url(Assets/about-me-bg.svg);
@@ -368,7 +369,7 @@ nav {
   height: 990px;
 }
 
-.contact > .primary-text {
+.contact > form > .primary-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -416,7 +417,7 @@ textarea::-webkit-input-placeholder {
   color: #3c3a39;
 }
 
-.contact > button {
+.contact > form > button {
   border: none;
   margin-top: 24px;
   margin-left: auto;
@@ -460,13 +461,13 @@ textarea::-webkit-input-placeholder {
 
 /* ----------------- Button Behaviour ---------------- */
 
-button:hover {
+.my-buttons:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
-button:active {
+.my-buttons:active {
   background: #e05304;
   color: #f4f1f0;
   border: none;
