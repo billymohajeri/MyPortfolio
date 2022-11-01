@@ -196,8 +196,8 @@ nav {
 /* ----------------- Other Projects ---------------- */
 
 .other-projects {
-  display: flex;
-  flex-direction: column;
+  float: left;
+  /* flex-direction: column; */
   background-image: url(Assets/other-projects.svg);
   background-repeat: no-repeat;
   background-size: 327px, 386px;
@@ -213,14 +213,14 @@ nav {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  position: auto;
+  /* position: auto; */
   color: #fff;
   width: 327px;
   height: 48px;
   border: none;
   background: #ff6b00;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 24px;
+  margin-right: 0;
   margin-top: 0;
 }
 
