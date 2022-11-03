@@ -39,8 +39,8 @@
           </a>
         </section>
         <section class="mobile-only">
-          <a href="#" class="right-menu-item"
-            ><img src="assets/mobile/ham.svg" alt=""
+          <a href="#"
+            ><img src="assets/mobile/ham.svg" alt="" class="right-menu-item"
           /></a>
         </section>
       </nav>
@@ -93,6 +93,11 @@
         <hr class="last-project-line" />
         <article class="last-project">
           <img
+            src="assets/mobile/last-project-mobile.svg"
+            alt=""
+            class="last-project-image-mobile mobile-only"
+          />
+          <img
             src="assets/desktop/last-project-desktop.svg"
             alt=""
             class="desktop-images last-project-image"
@@ -114,12 +119,6 @@
             </ul>
             <button class="my-buttons last-project-button">See Project</button>
           </section>
-
-          <img
-            src="assets/mobile/last-project-mobile.svg"
-            alt=""
-            class="last-project-image-mobile mobile-only"
-          />
         </article>
         <section class="other-projects">
           <article class="project1 other-projects-item">
@@ -257,8 +256,11 @@
 
       <section class="contact-flex">
         <h2 class="primary-text">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
+          <span id="line-br-1">I'm always</span>
+          <span id="line-br-2"
+            >interested in hearing about new projects, so if you'd like to chat
+            please get in touch.</span
+          >
         </h2>
         <form action="https://formspree.io/f/mlevordr" method="POST">
           <input
@@ -277,7 +279,7 @@
             required
           />
           <textarea
-          class="text-area"
+            class="text-area"
             name="comment"
             id=""
             cols="30"
@@ -288,27 +290,32 @@
           ></textarea>
           <button type="submit" class="my-buttons">Get in touch</button>
         </form>
-
-        <img src="assets/mobile/line.svg" alt="" class="black-line" />
       </section>
-      <hr class="gray-line gray-line-desktop" />
-      <ul class="socials2 socials-desktop">
-        <li>
-          <a href="#"><img src="assets/common/github-dark.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="assets/common/linkedin-dark.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="assets/common/angellist-dark.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="assets/common/twitter-dark.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="assets/common/medium-dark.svg" alt="" /></a>
-        </li>
-      </ul>
+
+      <footer>
+        <hr class="gray-line gray-line-desktop" />
+
+        <ul class="socials2 socials-desktop">
+          <li>
+            <a href="#"><img src="assets/common/github-dark.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/common/linkedin-dark.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/common/angellist-dark.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/common/twitter-dark.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/common/medium-dark.svg" alt="" /></a>
+          </li>
+        </ul>
+        <img src="assets/mobile/line.svg" alt="" class="black-line" />
+      </footer>
     </section>
   </body>
 </html>

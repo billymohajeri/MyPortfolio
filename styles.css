@@ -28,7 +28,7 @@ p {
   width: 375px;
 }
 
-/* ----------------- Toolbar ---------------- */
+/* ----------------- Toolbar Mobile ---------------- */
 
 .toolbar {
   background: #3c3a39;
@@ -40,6 +40,7 @@ p {
 
 .right-menu-item {
   margin-right: 24px;
+  margin-top: 18px;
 }
 
 .left-menu-item {
@@ -54,16 +55,17 @@ p {
   margin-top: 16px;
 }
 
-/* ----------------- Headline ---------------- */
+/* ----------------- Headline Mobile ---------------- */
 
 .headline {
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
   height: 590px;
-  background-image: url(assets/mobile/bg-mobile.svg);
-  background-position: 225px 220px;
-  background-size: 40%;
+  width: 375px;
+  background-image: url(assets/mobile/headline-mobile.svg);
+  background-position-x: right;
+  background-position-y: 220px;
   background-repeat: no-repeat;
 }
 
@@ -102,7 +104,7 @@ p {
 }
 
 .headline-texts {
-  width: 90%;
+  width: 98%;
 }
 
 .headline-socials {
@@ -115,11 +117,13 @@ p {
   margin-left: 35px;
 }
 
-/* ----------------- First Project Mobile ---------------- */
+/* ----------------- Last Project Mobile ---------------- */
 
 .projects {
   background-color: #fff;
-  height: 3726px;
+  height: 3750px;
+  width: 375px;
+  margin-top: -112px;
 }
 
 .last-project-h1 {
@@ -130,8 +134,7 @@ p {
   font-size: 40px;
   line-height: 52px;
   margin-top: 135px;
-  margin-left: 153px;
-  text-align: left;
+  text-align: center;
 }
 
 .last-project-line {
@@ -170,7 +173,7 @@ p {
   list-style: none;
 }
 
-.last-project > button {
+.last-project button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -188,7 +191,7 @@ p {
   background: #ff6b00;
 }
 
-.last-project .title-post {
+.last-project-title {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -198,19 +201,19 @@ p {
   margin-top: 24px;
 }
 
-.last-project .supporting-text {
+.last-project-supporting-text {
   font-family: "Inter", sans-serif;
-  margin-right: 24px;
-  color: #091e42;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-right: 24px;
+  color: #091e42;
 }
 
 /* ----------------- Other Projects Mobile ---------------- */
 
-.other-projects {
+.other-projects-item {
   display: flex;
   flex-direction: column;
   background-image: url(assets/mobile/other-projects-mobile.svg);
@@ -220,7 +223,7 @@ p {
   height: 470px;
 }
 
-.other-projects > button {
+.other-projects button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -239,7 +242,7 @@ p {
   margin-top: 0;
 }
 
-.other-projects > ul > li {
+.other-projects ul > li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px 10px 12px;
   font-family: "Inter", sans-serif;
@@ -252,14 +255,14 @@ p {
   display: inline;
 }
 
-.other-projects > ul {
+.other-projects ul {
   margin-bottom: 22px;
   margin-left: 40px;
   margin-top: 0;
   padding: 0;
 }
 
-.other-projects > .title-post {
+.other-projects .title-post {
   margin-bottom: 12px;
   margin-left: 40px;
   text-align: left;
@@ -272,7 +275,7 @@ p {
   color: #fff;
 }
 
-.other-projects > .supporting-text {
+.other-projects .supporting-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -286,16 +289,18 @@ p {
 
 /* ----------------- About Me Mobile ---------------- */
 
-.about-me {
+.about-me-page {
   background: #1c1a19;
   background-image: url(assets/mobile/about-me-mobile.svg);
   background-repeat: no-repeat;
-  height: 1800px;
+  width: 375px;
+  height: 1930px;
+  margin-top: 0;
   background-position-y: 25%;
   background-position-x: right;
 }
 
-.about-me > .primary-text {
+.about-me-primary-text {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -308,7 +313,7 @@ p {
   text-align: center;
 }
 
-.about-me > .description {
+.about-me-description {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 24px;
@@ -321,7 +326,7 @@ p {
   color: #f4f5f7;
 }
 
-.about-me > button {
+.about-me-page button {
   width: 161px;
   height: 48px;
   margin-left: 24px;
@@ -335,7 +340,7 @@ p {
   color: #fff;
 }
 
-.about-me > hr {
+.about-me-page > hr {
   border: 1px solid #fff;
   border-top: none;
   margin-top: 205px;
@@ -352,13 +357,13 @@ p {
   padding-left: 0;
   text-align: center;
   color: #fff;
-  margin-bottom: 44px;
 }
 
 .skill-list-item {
   font-family: "Inter", sans-serif;
   font-style: normal;
   margin-bottom: 32px;
+  margin-top: 32px;
   padding-left: 0;
   font-weight: 400;
   font-size: 22px;
@@ -366,39 +371,25 @@ p {
   color: #fff;
 }
 
-.about-me > ul,
-.about-me > ul > ul {
-  list-style: none;
+.about-me-page ul {
+  margin-top: 32px;
 }
 
-.about-me > ul > li {
-  margin-bottom: 30px;
+.about-me-page ul li {
+  margin-bottom: 12px;
   padding-left: 0;
   margin-left: 0;
 }
 
 /* ----------------- Contact Mobile ---------------- */
 
-.contact {
+.contact-flex {
   background-color: #fff;
   height: 990px;
+  width: 375px;
 }
 
 .contact-flex > .primary-text {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  margin-top: 130px;
-  margin-left: 135px;
-  width: 28%;
-  padding-right: 2%;
-  text-align: left;
-  color: #262626;
-}
-
-.contact > form > .primary-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -446,7 +437,7 @@ textarea::-webkit-input-placeholder {
   color: #3c3a39;
 }
 
-.contact > form > button {
+.contact-flex > form > button {
   border: none;
   margin-top: 24px;
   margin-left: auto;
@@ -468,6 +459,7 @@ textarea::-webkit-input-placeholder {
 .gray-line {
   border: 1px solid #dfe1e6;
   width: 370px;
+  margin-top: -120px;
   border-top: none;
 }
 
@@ -527,7 +519,7 @@ textarea::-webkit-input-placeholder {
     height: 4561px;
   }
 
-  /* ----------------- Toolbar ---------------- */
+  /* ----------------- Toolbar Desktop ---------------- */
 
   .toolbar {
     background: #3c3a39;
@@ -565,13 +557,14 @@ textarea::-webkit-input-placeholder {
     margin-right: 156px;
   }
 
-  /* ----------------- Headline ---------------- */
+  /* ----------------- Headline Desktop ---------------- */
 
   .headline {
     display: flex;
     flex-direction: row;
     background-color: #1c1a19;
     height: 798px;
+    width: 1440px;
     background-image: url(assets/desktop/headline-desktop.svg);
     background-position-x: right;
     background-position-y: 40px;
@@ -630,15 +623,28 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 23px;
   }
 
-  /* ----------------- First Project ---------------- */
+  /* ----------------- First Project Desktop ---------------- */
 
   .projects {
     background-color: #fff;
     height: 1890px;
-    margin-top: -32px;
+    width: 1440px;
+    margin-top: -40px;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+  }
+
+  .last-project-h1 {
+    font-family: "Crete Round", serif;
+    color: #091e42;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 135px;
+    margin-left: 153px;
+    text-align: left;
   }
 
   .last-project-items > li {
@@ -770,11 +776,11 @@ textarea::-webkit-input-placeholder {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #fff;
-    width: 100%;
     height: 58px;
     border: none;
     background: #ff6b00;
-    margin-top: 12.5%;
+    margin-top: 20px;
+    margin-left: 18px;
   }
 
   .other-projects-item > ul > li {
@@ -829,6 +835,7 @@ textarea::-webkit-input-placeholder {
     background-image: url(assets/desktop/about-me-desktop.svg);
     background-repeat: no-repeat;
     height: 1195px;
+    width: 1440px;
     background-position-y: 10%;
     background-position-x: right;
     margin-top: -34px;
@@ -910,94 +917,99 @@ textarea::-webkit-input-placeholder {
     text-align: left;
   }
 
-  .about-me > ul,
-  .about-me > ul > ul {
-    list-style: none;
-  }
-
-  .about-me > ul > li {
-    margin-bottom: 30px;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
   /* ----------------- Contact Desktop ---------------- */
 
   .contact-flex {
-    background-color: #e5e5e5;
+    background-color: #fff;
     display: flex;
+    width: 1440px;
+    height: 686px;
+    margin-top: -16px;
   }
-}
 
-.contact-flex > form {
-  background-color: #e5e5e5;
-  margin-top: 110px;
-  margin-left: 24px;
-}
+  .contact-flex > form {
+    background-color: #fff;
+    margin-top: 110px;
+    margin-left: 24px;
+  }
 
-.contact-flex .normal-text-box {
-  background-color: #e5e5e5;
-  border: none;
-  border-bottom: 1px solid #dbd8d7;
-  color: #979493;
-  width: 684px;
-  margin-top: 39px;
-  margin-bottom: 24px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-indent: 16px;
-  font-size: 15px;
-  padding-bottom: 14px;
-}
+  .contact-flex > .primary-text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 130px;
+    margin-left: 135px;
+    width: 28%;
+    padding-right: 2%;
+    text-align: left;
+    color: #262626;
+  }
 
-.text-area::-webkit-input-placeholder {
-  color: #3c3a39;
-}
+  .contact-flex .normal-text-box {
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+    color: #979493;
+    width: 684px;
+    margin-top: 39px;
+    margin-bottom: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 16px;
+    font-size: 15px;
+    padding-bottom: 14px;
+  }
 
-.contact-flex textarea {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  width: 100%;
-  height: 114px;
-  display: block;
-  padding: 12px;
-  border: none;
-  background-color: #fbf8f7;
-}
+  .text-area::-webkit-input-placeholder {
+    color: #3c3a39;
+  }
 
-.contact-flex > form > button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  border: none;
-  margin-top: 24px;
-  margin-left: 0;
-  width: 122px;
-  height: 48px;
-  background: #f55800;
-  color: #fff;
-}
+  .contact-flex textarea {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    width: 100%;
+    height: 114px;
+    display: block;
+    padding: 12px;
+    border: none;
+    background-color: #fbf8f7;
+  }
 
-.gray-line-desktop {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #a2a3a6;
-  margin-bottom: 25px;
-}
+  .contact-flex > form > button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: none;
+    margin-top: 24px;
+    margin-left: 0;
+    width: 122px;
+    height: 48px;
+    background: #f55800;
+    color: #fff;
+  }
 
-.socials-desktop {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  width: 14%;
-  padding-left: 0;
-  margin-left: auto;
-  margin-right: auto;
+  .gray-line-desktop {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a2a3a6;
+    margin-bottom: 25px;
+  }
+
+  .socials-desktop {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 14%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
