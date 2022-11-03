@@ -17,8 +17,8 @@ This is a website containing a collection of Projects I have worked on, my techn
 
 - Installed VS Code
 - Installed Git
-- Familiarity with basic HTML5 & CSS3.
-- Familiarity with Figma.
+- Familiarity with basic HTML5 & CSS3
+- Familiarity with Figma
 
 ### Setup
 
