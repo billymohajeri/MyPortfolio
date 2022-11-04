@@ -1,6 +1,13 @@
 body {
   background-color: #e5e5e5;
   margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 ul {
@@ -35,11 +42,13 @@ p {
   background: #3c3a39;
   height: 46px;
   width: 375px;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
 
 .right-menu-item {
+  /* margin-right: 6.4vw; */
   margin-right: 24px;
   margin-top: 18px;
 }
@@ -53,6 +62,7 @@ p {
   line-height: 24px;
   color: #fff;
   margin-left: 24px;
+  /* margin-left: 6.4vw; */
   margin-top: 16px;
 }
 
@@ -63,7 +73,7 @@ p {
   flex-direction: column;
   background-color: #1c1a19;
   height: 590px;
-  width: 375px;
+  /* width: 375px; */
   background-image: url(assets/mobile/headline-mobile.svg);
   background-position-x: right;
   background-position-y: 220px;
@@ -76,7 +86,8 @@ p {
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
+  /* margin-left: 6.4vw; */
   margin-top: 120px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -88,7 +99,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-top: 12px;
   color: #fff5e1;
 }
@@ -99,13 +110,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-top: 12px;
   color: #fff;
 }
 
 .headline-texts {
-  width: 98%;
+  width: 91%;
+  margin-left: 24px;
 }
 
 .headline-socials {
@@ -124,7 +136,7 @@ p {
   background-color: #fff;
   height: 3750px;
   width: 375px;
-  margin-top: -112px;
+  /* margin-top: 0; */
 }
 
 .last-project-h1 {
@@ -516,7 +528,8 @@ textarea::-webkit-input-placeholder {
     gap: 0;
     padding: 0;
     grid-template-columns: auto;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 4561px;
   }
 
@@ -525,7 +538,8 @@ textarea::-webkit-input-placeholder {
   .toolbar {
     background: #3c3a39;
     height: 72px;
-    width: 1440px;
+    width: 100vw;
+    max-width: 1440px;
   }
 
   .left-menu-item {
@@ -536,7 +550,7 @@ textarea::-webkit-input-placeholder {
     font-size: 20px;
     line-height: 20px;
     color: #fff;
-    margin-left: 154px;
+    margin-left: 11vw;
     margin-top: 26px;
     justify-content: flex-end;
   }
@@ -549,13 +563,13 @@ textarea::-webkit-input-placeholder {
     font-size: 15px;
     line-height: 20px;
     color: #fff;
-    margin-left: 32px;
+    margin-left: 2vw;
     margin-top: 26px;
     justify-content: flex-end;
   }
 
   .desktop-right-menu-item:nth-child(4) {
-    margin-right: 156px;
+    margin-right: 10vw;
   }
 
   /* ----------------- Headline Desktop ---------------- */
@@ -565,7 +579,8 @@ textarea::-webkit-input-placeholder {
     flex-direction: row;
     background-color: #1c1a19;
     height: 798px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     background-image: url(assets/desktop/headline-desktop.svg);
     background-position-x: right;
     background-position-y: 40px;
@@ -574,7 +589,7 @@ textarea::-webkit-input-placeholder {
 
   .headline-texts {
     order: 10;
-    padding-right: 50%;
+    padding-right: 46%;
   }
 
   .headline-primary-text {
@@ -583,7 +598,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    margin-top: 210px;
+    margin-top: 192px;
     letter-spacing: 0.37px;
     color: #f55800;
   }
@@ -594,7 +609,6 @@ textarea::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
-    margin-left: 24px;
     margin-top: 24px;
     color: #fff;
   }
@@ -605,7 +619,6 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-left: 24px;
     margin-top: 24px;
     color: #f4f5f7;
   }
@@ -624,12 +637,15 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 23px;
   }
 
-  /* ----------------- First Project Desktop ---------------- */
+  /* ----------------- Last Project Desktop ---------------- */
 
   .projects {
     background-color: #fff;
     height: 1890px;
     width: 1440px;
+    width: 100%;
+    width: auto;
+    max-width: 1440px;
     margin-top: -40px;
     align-items: center;
     justify-content: center;
@@ -683,7 +699,10 @@ textarea::-webkit-input-placeholder {
 
   .last-project-image {
     margin-top: 114px;
-    margin-left: 141px;
+    height: auto;
+    padding-left: 9rem;
+    width: 55vw;
+    max-width: 684px;
     display: inline-flex;
   }
 
@@ -694,6 +713,7 @@ textarea::-webkit-input-placeholder {
 
   .last-project > section {
     margin-left: 24px;
+    min-width: 350px;
   }
 
   .last-project-items {
@@ -746,11 +766,11 @@ textarea::-webkit-input-placeholder {
 
   .other-projects {
     display: grid;
+    overflow: auto;
     grid-template-columns: auto auto auto;
-    padding-left: 160px;
-    padding-right: 143.5px;
     padding-top: 24px;
-    gap: 24px;
+    max-width: 1440px;
+    width: 100%;
   }
 
   .project1 {
@@ -767,9 +787,11 @@ textarea::-webkit-input-placeholder {
 
   .other-projects-item {
     background-repeat: no-repeat;
+    padding: 16px;
+    margin: 0;
   }
 
-  .other-projects-item > button {
+  .other-projects-item button {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -780,8 +802,8 @@ textarea::-webkit-input-placeholder {
     height: 58px;
     border: none;
     background: #ff6b00;
-    margin-top: 20px;
-    margin-left: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .other-projects-item > ul > li {
@@ -836,7 +858,8 @@ textarea::-webkit-input-placeholder {
     background-image: url(assets/desktop/about-me-desktop.svg);
     background-repeat: no-repeat;
     height: 1195px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     background-position-y: 10%;
     background-position-x: right;
     margin-top: -34px;
@@ -924,6 +947,8 @@ textarea::-webkit-input-placeholder {
     background-color: #fff;
     display: flex;
     width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 686px;
     margin-top: -16px;
   }
@@ -942,7 +967,7 @@ textarea::-webkit-input-placeholder {
     line-height: 52px;
     margin-top: 130px;
     margin-left: 135px;
-    width: 28%;
+    width: 28vw;
     padding-right: 2%;
     text-align: left;
     color: #262626;
@@ -952,7 +977,8 @@ textarea::-webkit-input-placeholder {
     border: none;
     border-bottom: 1px solid #dbd8d7;
     color: #979493;
-    width: 684px;
+    width: 50vw;
+    max-width: 684px;
     margin-top: 39px;
     margin-bottom: 24px;
     display: block;
@@ -961,6 +987,7 @@ textarea::-webkit-input-placeholder {
     text-indent: 16px;
     font-size: 15px;
     padding-bottom: 14px;
+    margin-right: 1vw;
   }
 
   .text-area::-webkit-input-placeholder {
@@ -973,7 +1000,10 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    width: 100%;
+    width: 50vw;
+    margin-right: 1vw;
+    max-width: 684px;
+    margin-left: 0px;
     height: 114px;
     display: block;
     padding: 12px;
