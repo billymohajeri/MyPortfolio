@@ -42,13 +42,11 @@ p {
   background: #3c3a39;
   height: 46px;
   width: 375px;
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
 
 .right-menu-item {
-  /* margin-right: 6.4vw; */
   margin-right: 24px;
   margin-top: 18px;
 }
@@ -62,7 +60,6 @@ p {
   line-height: 24px;
   color: #fff;
   margin-left: 24px;
-  /* margin-left: 6.4vw; */
   margin-top: 16px;
 }
 
@@ -73,7 +70,6 @@ p {
   flex-direction: column;
   background-color: #1c1a19;
   height: 590px;
-  /* width: 375px; */
   background-image: url(assets/mobile/headline-mobile.svg);
   background-position-x: right;
   background-position-y: 220px;
@@ -86,8 +82,6 @@ p {
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  /* margin-left: 24px; */
-  /* margin-left: 6.4vw; */
   margin-top: 120px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -99,7 +93,6 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  /* margin-left: 24px; */
   margin-top: 12px;
   color: #fff5e1;
 }
@@ -110,7 +103,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* margin-left: 24px; */
   margin-top: 12px;
   color: #fff;
 }
@@ -136,7 +128,6 @@ p {
   background-color: #fff;
   height: 3750px;
   width: 375px;
-  /* margin-top: 0; */
 }
 
 .last-project-h1 {
@@ -948,7 +939,6 @@ textarea::-webkit-input-placeholder {
     display: flex;
     width: 1440px;
     max-width: 1440px;
-    width: 100%;
     height: 686px;
     margin-top: -16px;
   }
@@ -983,7 +973,6 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 24px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
     text-indent: 16px;
     font-size: 15px;
     padding-bottom: 14px;
@@ -1003,7 +992,7 @@ textarea::-webkit-input-placeholder {
     width: 50vw;
     margin-right: 1vw;
     max-width: 684px;
-    margin-left: 0px;
+    margin-left: 0;
     height: 114px;
     display: block;
     padding: 12px;
