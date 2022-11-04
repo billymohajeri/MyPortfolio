@@ -1,11 +1,32 @@
 body {
   background-color: #e5e5e5;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
 h2,
 p {
   margin: 0;
+}
+
+/* ----------------- Mobile ⬇️ ---------------- */
+
+.desktop-images,
+.desktop-only {
+  display: none;
 }
 
 .grid-container {
@@ -15,7 +36,7 @@ p {
   width: 375px;
 }
 
-/* ----------------- Toolbar ---------------- */
+/* ----------------- Toolbar Mobile ---------------- */
 
 .toolbar {
   background: #3c3a39;
@@ -25,7 +46,12 @@ p {
   justify-content: space-between;
 }
 
-.toolbar-text {
+.right-menu-item {
+  margin-right: 24px;
+  margin-top: 18px;
+}
+
+.left-menu-item {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -37,107 +63,102 @@ p {
   margin-top: 16px;
 }
 
-nav {
-  margin-right: 5%;
-  margin-top: 4%;
-}
-
-/* ----------------- Headline ---------------- */
+/* ----------------- Headline Mobile ---------------- */
 
 .headline {
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
   height: 590px;
-  background-image: url(Assets/bg.svg);
-  background-position: 225px 220px;
-  background-size: 40%;
+  background-image: url(assets/mobile/headline-mobile.svg);
+  background-position-x: right;
+  background-position-y: 220px;
   background-repeat: no-repeat;
 }
 
-.headline > .primary-text {
+.headline-primary-text {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  margin-left: 24px;
   margin-top: 120px;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
 
-.headline > .supporting-text {
+.headline-supporting-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  margin-left: 24px;
   margin-top: 12px;
   color: #fff5e1;
 }
 
-.headline > .description {
+.headline-description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 24px;
   margin-top: 12px;
   color: #fff;
 }
 
-.socials1 {
+.headline-texts {
+  width: 91%;
+  margin-left: 24px;
+}
+
+.headline-socials {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   height: 4%;
-  margin-left: 10px;
+  margin-top: 22px;
+  margin-left: 35px;
 }
 
-.socials1 > li {
-  display: inline;
-}
-
-/* ----------------- First Project ---------------- */
+/* ----------------- Last Project Mobile ---------------- */
 
 .projects {
   background-color: #fff;
-  height: 3726px;
+  height: 3750px;
+  width: 375px;
 }
 
-.first-project > .title {
+.last-project-h1 {
   font-family: "Crete Round", serif;
-  color: #1c1a19;
+  color: #091e42;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  margin-top: 100px;
-  text-align: left;
+  margin-top: 135px;
+  text-align: center;
 }
 
-.first-project > hr {
+.last-project-line {
   border: 1px solid #212121;
   border-top: none;
   margin-top: 30px;
   width: 327px;
 }
 
-.first-project > img {
+.last-project-image-mobile {
   margin-top: 70px;
   margin-bottom: 24px;
-  display: block;
+  display: flex;
 }
 
-.first-project {
+.last-project {
   margin-left: 24px;
 }
 
-.first-project > ul > li {
+.last-project-items > li {
   border: 1px solid #8993a4;
   padding: 10px 12px;
   font-family: "Inter", sans-serif;
@@ -149,14 +170,14 @@ nav {
   display: inline;
 }
 
-.first-project > ul {
+.last-project-items {
   padding: 0;
   margin-bottom: 24px;
   margin-top: 24px;
   list-style: none;
 }
 
-.first-project > button {
+.last-project button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -174,38 +195,39 @@ nav {
   background: #ff6b00;
 }
 
-.first-project .title-post {
+.last-project-title {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin-top: 24px;
 }
 
-.first-project .supporting-text {
+.last-project-supporting-text {
   font-family: "Inter", sans-serif;
-  margin-right: 24px;
-  color: #091e42;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-right: 24px;
+  color: #091e42;
 }
 
-/* ----------------- Other Projects ---------------- */
+/* ----------------- Other Projects Mobile ---------------- */
 
-.other-projects {
+.other-projects-item {
   display: flex;
   flex-direction: column;
-  background-image: url(Assets/other-projects.svg);
+  background-image: url(assets/mobile/other-projects-mobile.svg);
   background-repeat: no-repeat;
   background-size: 327px, 386px;
   background-position: center;
   height: 470px;
 }
 
-.other-projects > button {
+.other-projects button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -224,7 +246,7 @@ nav {
   margin-top: 0;
 }
 
-.other-projects > ul > li {
+.other-projects ul > li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px 10px 12px;
   font-family: "Inter", sans-serif;
@@ -237,14 +259,14 @@ nav {
   display: inline;
 }
 
-.other-projects > ul {
+.other-projects ul {
   margin-bottom: 22px;
   margin-left: 40px;
   margin-top: 0;
   padding: 0;
 }
 
-.other-projects > .title-post {
+.other-projects .title-post {
   margin-bottom: 12px;
   margin-left: 40px;
   text-align: left;
@@ -257,7 +279,7 @@ nav {
   color: #fff;
 }
 
-.other-projects > .supporting-text {
+.other-projects .supporting-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -269,18 +291,20 @@ nav {
   color: #fff;
 }
 
-/* ----------------- About Me ---------------- */
+/* ----------------- About Me Mobile ---------------- */
 
-.about-me {
+.about-me-page {
   background: #1c1a19;
-  background-image: url(Assets/about-me-bg.svg);
+  background-image: url(assets/mobile/about-me-mobile.svg);
   background-repeat: no-repeat;
-  height: 1800px;
+  width: 375px;
+  height: 1930px;
+  margin-top: 0;
   background-position-y: 25%;
   background-position-x: right;
 }
 
-.about-me > .primary-text {
+.about-me-primary-text {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -293,7 +317,7 @@ nav {
   text-align: center;
 }
 
-.about-me > .description {
+.about-me-description {
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 24px;
@@ -306,7 +330,7 @@ nav {
   color: #f4f5f7;
 }
 
-.about-me > button {
+.about-me-page button {
   width: 161px;
   height: 48px;
   margin-left: 24px;
@@ -320,7 +344,7 @@ nav {
   color: #fff;
 }
 
-.about-me > hr {
+.about-me-page > hr {
   border: 1px solid #fff;
   border-top: none;
   margin-top: 205px;
@@ -337,13 +361,13 @@ nav {
   padding-left: 0;
   text-align: center;
   color: #fff;
-  margin-bottom: 44px;
 }
 
 .skill-list-item {
   font-family: "Inter", sans-serif;
   font-style: normal;
   margin-bottom: 32px;
+  margin-top: 32px;
   padding-left: 0;
   font-weight: 400;
   font-size: 22px;
@@ -351,25 +375,25 @@ nav {
   color: #fff;
 }
 
-.about-me > ul,
-.about-me > ul > ul {
-  list-style: none;
+.about-me-page ul {
+  margin-top: 32px;
 }
 
-.about-me > ul > li {
-  margin-bottom: 30px;
+.about-me-page ul li {
+  margin-bottom: 12px;
   padding-left: 0;
   margin-left: 0;
 }
 
-/* ----------------- Contact ---------------- */
+/* ----------------- Contact Mobile ---------------- */
 
-.contact {
+.contact-flex {
   background-color: #fff;
   height: 990px;
+  width: 375px;
 }
 
-.contact > form > .primary-text {
+.contact-flex > .primary-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -417,7 +441,7 @@ textarea::-webkit-input-placeholder {
   color: #3c3a39;
 }
 
-.contact > form > button {
+.contact-flex > form > button {
   border: none;
   margin-top: 24px;
   margin-left: auto;
@@ -439,6 +463,7 @@ textarea::-webkit-input-placeholder {
 .gray-line {
   border: 1px solid #dfe1e6;
   width: 370px;
+  margin-top: -120px;
   border-top: none;
 }
 
@@ -471,4 +496,540 @@ textarea::-webkit-input-placeholder {
   background: #e05304;
   color: #f4f1f0;
   border: none;
+}
+
+/* ----------------- Desktop ⬇️ ---------------- */
+
+@media screen and (min-width: 768px) {
+  nav,
+  .mobile-images,
+  .mobile-only,
+  .mobile,
+  img.black-line {
+    display: none;
+  }
+
+  section > article > .desktop-images,
+  .desktop-only {
+    display: flex;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 0;
+    padding: 0;
+    grid-template-columns: auto;
+    width: 100%;
+    max-width: 1440px;
+    height: 4561px;
+  }
+
+  /* ----------------- Toolbar Desktop ---------------- */
+
+  .toolbar {
+    background: #3c3a39;
+    height: 72px;
+    width: 100vw;
+    max-width: 1440px;
+  }
+
+  .left-menu-item {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 11vw;
+    margin-top: 26px;
+    justify-content: flex-end;
+  }
+
+  .desktop-right-menu-item {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 2vw;
+    margin-top: 26px;
+    justify-content: flex-end;
+  }
+
+  .desktop-right-menu-item:nth-child(4) {
+    margin-right: 10vw;
+  }
+
+  /* ----------------- Headline Desktop ---------------- */
+
+  .headline {
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1a19;
+    height: 798px;
+    max-width: 1440px;
+    width: 100%;
+    background-image: url(assets/desktop/headline-desktop.svg);
+    background-position-x: right;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+  }
+
+  .headline-texts {
+    order: 10;
+    padding-right: 46%;
+  }
+
+  .headline-primary-text {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    margin-top: 192px;
+    letter-spacing: 0.37px;
+    color: #f55800;
+  }
+
+  .headline-supporting-text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 24px;
+    color: #fff;
+  }
+
+  .headline-description {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 24px;
+    color: #f4f5f7;
+  }
+
+  .headline-socials {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 36px;
+    margin-right: 87px;
+    padding: 0;
+    height: 100%;
+  }
+
+  .headline-socials > li {
+    margin-bottom: 23px;
+  }
+
+  /* ----------------- Last Project Desktop ---------------- */
+
+  .projects {
+    background-color: #fff;
+    height: 1890px;
+    width: 1440px;
+    width: 100%;
+    width: auto;
+    max-width: 1440px;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .last-project-h1 {
+    font-family: "Crete Round", serif;
+    color: #091e42;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 135px;
+    margin-left: 153px;
+    text-align: left;
+  }
+
+  .last-project-items > li {
+    border: 1px solid #8993a4;
+    padding: 10px 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    display: inline-flex;
+  }
+
+  .projects ul li {
+    display: inline;
+  }
+
+  .last-project-title {
+    font-family: "Crete Round", serif;
+    color: #091e42;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .last-project-line {
+    border: none;
+    border-bottom: 1px solid #212121;
+    margin-top: -20px;
+    margin-right: 153.5px;
+    width: 794px;
+  }
+
+  .last-project-image {
+    margin-top: 114px;
+    height: auto;
+    padding-left: 9rem;
+    width: 55vw;
+    max-width: 684px;
+    display: inline-flex;
+  }
+
+  .last-project {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .last-project > section {
+    margin-left: 24px;
+    min-width: 350px;
+  }
+
+  .last-project-items {
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+
+  .last-project-button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 124px;
+    height: 48px;
+    background: #ff6b00;
+    margin-top: 24px;
+  }
+
+  .projects .last-project-title {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    color: #091e42;
+    margin-top: 110px;
+  }
+
+  .last-project-supporting-text {
+    font-family: "Inter", sans-serif;
+    margin-right: 24px;
+    color: #091e42;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    width: 64%;
+  }
+
+  /* ----------------- Other Projects Desktop ---------------- */
+
+  .other-projects {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: auto auto auto;
+    padding-top: 24px;
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .project1 {
+    background-image: url(assets/desktop/project1.svg);
+  }
+
+  .project2 {
+    background-image: url(assets/desktop/project2.svg);
+  }
+
+  .project3 {
+    background-image: url(assets/desktop/project3.svg);
+  }
+
+  .other-projects-item {
+    background-repeat: no-repeat;
+    padding: 16px;
+    margin: 0;
+  }
+
+  .other-projects-item button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    height: 58px;
+    border: none;
+    background: #ff6b00;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .other-projects-item > ul > li {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 10px 12px 10px 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 12px;
+    display: inline;
+  }
+
+  .other-projects-item > ul {
+    margin-bottom: 22px;
+    margin-left: 40px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .other-projects-item > .title-post {
+    margin-bottom: 12px;
+    margin-left: 40px;
+    text-align: left;
+    margin-top: 140px;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .other-projects-item > .supporting-text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #fff;
+  }
+
+  /* ----------------- About Me Desktop ---------------- */
+
+  .about-me-page {
+    background: #262626;
+    background-image: url(assets/desktop/about-me-desktop.svg);
+    background-repeat: no-repeat;
+    height: 1195px;
+    max-width: 1440px;
+    width: 100%;
+    background-position-y: 10%;
+    background-position-x: right;
+    margin-top: -34px;
+  }
+
+  .about-me-primary-text {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    letter-spacing: 0.37px;
+    color: #f55800;
+    margin-top: 130px;
+    margin-bottom: 24px;
+    margin-left: 142px;
+    text-align: left;
+  }
+
+  .about-me-description {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 142px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    width: 39%;
+    color: #f4f5f7;
+  }
+
+  .about-me-page > button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    width: 161px;
+    height: 48px;
+    margin-left: 142px;
+    background: #f55800;
+    border: none;
+  }
+
+  .about-me-page > hr {
+    border: 1px solid #fff;
+    border-top: none;
+    margin-top: 139px;
+    margin-bottom: 136px;
+    margin-left: 142px;
+    width: 80%;
+  }
+
+  .skill-list-title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 0;
+    color: #fff;
+    margin-bottom: 44px;
+    margin-left: 153px;
+    display: inline-flex;
+  }
+
+  .skill-list-item {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    margin-bottom: 32px;
+    padding-left: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    color: #fff;
+    text-align: left;
+  }
+
+  /* ----------------- Contact Desktop ---------------- */
+
+  .contact-flex {
+    background-color: #fff;
+    display: flex;
+    width: 1440px;
+    max-width: 1440px;
+    height: 686px;
+    margin-top: -16px;
+  }
+
+  .contact-flex > form {
+    background-color: #fff;
+    margin-top: 110px;
+    margin-left: 24px;
+  }
+
+  .contact-flex > .primary-text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 130px;
+    margin-left: 135px;
+    width: 28vw;
+    padding-right: 2%;
+    text-align: left;
+    color: #262626;
+  }
+
+  .contact-flex .normal-text-box {
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+    color: #979493;
+    width: 50vw;
+    max-width: 684px;
+    margin-top: 39px;
+    margin-bottom: 24px;
+    display: block;
+    margin-left: auto;
+    text-indent: 16px;
+    font-size: 15px;
+    padding-bottom: 14px;
+    margin-right: 1vw;
+  }
+
+  .text-area::-webkit-input-placeholder {
+    color: #3c3a39;
+  }
+
+  .contact-flex textarea {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    width: 50vw;
+    margin-right: 1vw;
+    max-width: 684px;
+    margin-left: 0;
+    height: 114px;
+    display: block;
+    padding: 12px;
+    border: none;
+    background-color: #fbf8f7;
+  }
+
+  .contact-flex > form > button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: none;
+    margin-top: 24px;
+    margin-left: 0;
+    width: 122px;
+    height: 48px;
+    background: #f55800;
+    color: #fff;
+  }
+
+  .gray-line-desktop {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a2a3a6;
+    margin-bottom: 25px;
+  }
+
+  .socials-desktop {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 14%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

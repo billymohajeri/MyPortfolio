@@ -28,148 +28,189 @@
   </head>
   <body>
     <header>
-      <section class="toolbar">
-        <a href="#" class="toolbar-text">Logo Here</a>
-        <nav class="menu">
-          <a href="#"><img src="Assets/ham.svg" alt="" /> </a>
-        </nav>
-      </section>
+      <nav class="toolbar">
+        <a href="#" class="left-menu-item">John Doe</a>
+        <section class="desktop-only">
+          <a href="#projects-section" class="desktop-right-menu-item"
+            >Portfolio</a
+          >
+          <a href="#about-section" class="desktop-right-menu-item">About</a>
+          <a href="#contact-section" class="desktop-right-menu-item">Contact</a>
+          <a
+            href="mailto:billy.mohajeri@gmail.com"
+            class="desktop-right-menu-item"
+          >
+            <img src="assets/desktop/mail.svg" alt="" />
+          </a>
+        </section>
+        <section class="mobile-only">
+          <a href="#"
+            ><img src="assets/mobile/ham.svg" alt="" class="right-menu-item"
+          /></a>
+        </section>
+      </nav>
     </header>
 
     <section class="grid-container">
       <section class="headline">
-        <h1 class="primary-text">Hey There.<br />I’m Billy</h1>
-        <h2 class="supporting-text">I’am a Software Developer</h2>
-        <p class="description">
-          I can help you build a product , feature or website Look through some
-          of my work <br />
-          and experience! If you like what you see <br />
-          and have a project you need coded, <br />
-          don’t hestiate to contact me.
-        </p>
+        <ul class="headline-texts">
+          <li>
+            <h1 class="headline-primary-text">Hey There.<br />I’m Billy</h1>
+          </li>
+          <li>
+            <h2 class="headline-supporting-text">I’am a Software Developer</h2>
+          </li>
+          <li>
+            <p class="headline-description">
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, <br />
+              don’t hestiate to contact me.
+            </p>
+          </li>
+        </ul>
 
-        <ul class="socials1">
+        <ul class="headline-socials">
           <li>
-            <a href="#"><img src="Assets/hub.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/github-light.svg" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/in.svg" alt="" /></a>
+            <a href="#"
+              ><img src="assets/common/linkedin-light.svg" alt=""
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/hnd.svg" alt="" /></a>
+            <a href="#"
+              ><img src="assets/common/angellist-light.svg" alt=""
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/tw.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/twitter-light.svg" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/m.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/medium-light.svg" alt="" /></a>
           </li>
         </ul>
       </section>
 
-      <section class="projects">
-        <article class="first-project">
-          <h1 class="title">My Recent Works</h1>
-          <hr />
-          <img src="Assets/first-project.svg" alt="" />
-          <h2 class="title-post">Multi-Post Stories</h2>
-          <p class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
+      <section class="projects" id="projects-section">
+        <h1 class="last-project-h1">My Recent Works</h1>
+        <hr class="last-project-line" />
+        <article class="last-project">
+          <img
+            src="assets/mobile/last-project-mobile.svg"
+            alt=""
+            class="last-project-image-mobile mobile-only"
+          />
+          <img
+            src="assets/desktop/last-project-desktop.svg"
+            alt=""
+            class="desktop-images last-project-image"
+          />
 
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
+          <section>
+            <h2 class="last-project-title">Multi-Post Stories</h2>
+            <p class="last-project-supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="last-project-items">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons last-project-button">See Project</button>
+          </section>
         </article>
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
-        <article class="other-projects">
-          <h1 class="title-post">Profesional Art Printing Data</h1>
-          <h2 class="supporting-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </h2>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="my-buttons">See Project</button>
-        </article>
+        <section class="other-projects">
+          <article class="project1 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+          <article class="project2 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+          <article class="project3 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+          <article class="project1 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+          <article class="project2 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+          <article class="project3 other-projects-item">
+            <h1 class="title-post">Profesional Art Printing Data</h1>
+            <h2 class="supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </h2>
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="my-buttons">See Project</button>
+          </article>
+        </section>
       </section>
 
-      <section class="about-me">
-        <h1 class="primary-text">About me</h1>
-        <p class="description">
+      <section class="about-me-page" id="about-section">
+        <h1 class="about-me-primary-text">About me</h1>
+        <p class="about-me-description">
           Hello I’m a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If you
           like what you see and have a project you need coded, don’t hestiate to
@@ -178,43 +219,53 @@
         <button class="my-buttons">Get My Resume</button>
         <hr />
         <ul class="skill-list-title">
-          <li>🔶 Language</li>
-          <ul class="skill-list-item">
-            <li>Javascript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
+          <li>
+            <img src="assets/desktop/bullet1.svg" alt="" /> Language
+
+            <ul class="skill-list-item">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </li>
         </ul>
         <ul class="skill-list-title">
-          <li>🟧 Frameworks</li>
-          <ul class="skill-list-item">
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSPec</li>
-            <li>CapyBara</li>
-            <li>Selenium</li>
-          </ul>
+          <li>
+            <img src="assets/desktop/bullet2.svg" alt="" /> Frameworks
+            <ul class="skill-list-item">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
         </ul>
         <ul class="skill-list-title">
-          <li>🟠 Skills</li>
-          <ul class="skill-list-item">
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
+          <li>
+            <img src="assets/desktop/bullet3.svg" alt="" /> Skills
+
+            <ul class="skill-list-item">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
         </ul>
       </section>
 
-      <section class="contact">
+      <section class="contact-flex" id="contact-section">
+        <h2 class="primary-text">
+          <span id="line-br-1">I'm always</span>
+          <span id="line-br-2"
+            >interested in hearing about new projects, so if you'd like to chat
+            please get in touch.</span
+          >
+        </h2>
         <form action="https://formspree.io/f/mlevordr" method="POST">
-          <h2 class="primary-text">
-            I'm always <br />
-            interested in hearing about new projects, so if you'd like to chat
-            please get in touch.
-          </h2>
           <input
             type="text"
             name="name"
@@ -231,7 +282,7 @@
             required
           />
           <textarea
-            
+            class="text-area"
             name="comment"
             id=""
             cols="30"
@@ -242,27 +293,32 @@
           ></textarea>
           <button type="submit" class="my-buttons">Get in touch</button>
         </form>
+      </section>
 
-        <hr class="gray-line" />
-        <ul class="socials2">
+      <footer>
+        <hr class="gray-line gray-line-desktop" />
+
+        <ul class="socials2 socials-desktop">
           <li>
-            <a href="#"><img src="Assets/hub2.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/github-dark.svg" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/in2.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/linkedin-dark.svg" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/hnd2.svg" alt="" /></a>
+            <a href="#"
+              ><img src="assets/common/angellist-dark.svg" alt=""
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/tw2.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/twitter-dark.svg" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="Assets/m2.svg" alt="" /></a>
+            <a href="#"><img src="assets/common/medium-dark.svg" alt="" /></a>
           </li>
         </ul>
-        <img src="Assets/line.svg" alt="" class="black-line" />
-      </section>
+        <img src="assets/mobile/line.svg" alt="" class="black-line" />
+      </footer>
     </section>
   </body>
 </html>
