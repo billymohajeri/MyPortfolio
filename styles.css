@@ -695,6 +695,7 @@ textarea::-webkit-input-placeholder {
     width: 55vw;
     max-width: 684px;
     display: inline-flex;
+    opacity: 50%;
   }
 
   .last-project {
