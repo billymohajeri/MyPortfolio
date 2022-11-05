@@ -695,6 +695,13 @@ textarea::-webkit-input-placeholder {
     width: 55vw;
     max-width: 684px;
     display: inline-flex;
+    opacity: 50%;
+  }
+
+  .last-project-image:hover {
+    transform: scale(1.2);
+    transition-duration: 2s;
+    opacity: 100%;
   }
 
   .last-project {
