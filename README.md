@@ -17,6 +17,9 @@ This is a website containing a collection of Projects I have worked on, my techn
 
 [Live Demo Link](https://billymohajeri.github.io/)
 
+## Project Presentation
+[Loom Video](https://www.loom.com/share/69aad4de362d4f4083c6076c501b5396)
+
 ### Prerequisites
 
 - Installed VS Code
