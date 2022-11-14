@@ -36,6 +36,54 @@ p {
   width: 375px;
 }
 
+/* ----------------- Mobile Menu ---------------- */
+
+.mobile-menu {
+  background-color: #3c3a39;
+  display: none;
+  opacity: 99%;
+  height: 755px;
+  width: 375px;
+  z-index: 2;
+  position: absolute;
+}
+
+.mobile-menu-items {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  margin-left: 10%;
+}
+
+.mobile-only > img {
+  cursor: pointer;
+}
+
+.mobile-menu hr {
+  border: 1px solid #6f6c6b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 87%;
+}
+
+.mobile-menu img {
+  margin-left: 85%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff5e1;
+  }
+
 /* ----------------- Toolbar Mobile ---------------- */
 
 .toolbar {

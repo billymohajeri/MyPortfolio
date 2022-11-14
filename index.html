@@ -28,6 +28,24 @@
   </head>
   <body>
     <header>
+      <!-- <button onclick="showMobileMenu()">click</button> -->
+      <section class="mobile-menu">
+        <img src="assets/mobile/x.svg" alt="" onclick="hideMobileMenu()" />
+        <ul>
+          <li class="mobile-menu-items" onclick="hideMobileMenu()">
+            <a href="#projects-section">Portfolio</a>
+          </li>
+          <li><hr /></li>
+          <li class="mobile-menu-items" onclick="hideMobileMenu()">
+            <a href="#about-section">About</a>
+          </li>
+          <li><hr /></li>
+          <li class="mobile-menu-items" onclick="hideMobileMenu()">
+            <a href="#contact-section">Contact</a>
+          </li>
+          <li><hr /></li>
+        </ul>
+      </section>
       <nav class="toolbar">
         <a href="#" class="left-menu-item">My Logo</a>
         <section class="desktop-only">
@@ -44,9 +62,12 @@
           </a>
         </section>
         <section class="mobile-only">
-          <a href="#"
-            ><img src="assets/mobile/ham.svg" alt="" class="right-menu-item"
-          /></a>
+          <img
+            src="assets/mobile/ham.svg"
+            alt=""
+            class="right-menu-item"
+            onclick="showMobileMenu()"
+          />
         </section>
       </nav>
     </header>
@@ -320,5 +341,6 @@
         <img src="assets/mobile/line.svg" alt="" class="black-line" />
       </footer>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
