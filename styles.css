@@ -41,11 +41,25 @@ p {
 .mobile-menu {
   background-color: #3c3a39;
   display: none;
-  opacity: 99%;
   height: 755px;
   width: 375px;
   z-index: 2;
   position: absolute;
+}
+
+.menu-footer {
+  height: 57px;
+  width: 375px;
+  background-color: #fff;
+  display: none;
+  z-index: 2;
+  position: relative;
+  top: 755px;
+}
+
+.menu-footer > img {
+  margin-left: 30%;
+  margin-top: 12%;
 }
 
 .mobile-menu-items {
@@ -82,7 +96,7 @@ p {
 .mobile-menu a {
   text-decoration: none;
   color: #fff5e1;
-  }
+}
 
 /* ----------------- Toolbar Mobile ---------------- */
 

@@ -27,25 +27,25 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <section class="mobile-menu">
+      <img src="assets/mobile/x.svg" alt="" onclick="hideMobileMenu()" id="x"/>
+      <ul>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#projects-section">Portfolio</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#about-section">About</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#contact-section">Contact</a>
+        </li>
+        <li><hr /></li>
+      </ul>
+    </section>
+    <div class="menu-footer"><img src="assets/mobile/line.svg" alt="" /></div>
     <header>
-      <!-- <button onclick="showMobileMenu()">click</button> -->
-      <section class="mobile-menu">
-        <img src="assets/mobile/x.svg" alt="" onclick="hideMobileMenu()" />
-        <ul>
-          <li class="mobile-menu-items" onclick="hideMobileMenu()">
-            <a href="#projects-section">Portfolio</a>
-          </li>
-          <li><hr /></li>
-          <li class="mobile-menu-items" onclick="hideMobileMenu()">
-            <a href="#about-section">About</a>
-          </li>
-          <li><hr /></li>
-          <li class="mobile-menu-items" onclick="hideMobileMenu()">
-            <a href="#contact-section">Contact</a>
-          </li>
-          <li><hr /></li>
-        </ul>
-      </section>
       <nav class="toolbar">
         <a href="#" class="left-menu-item">My Logo</a>
         <section class="desktop-only">
@@ -61,7 +61,7 @@
             <img src="assets/desktop/mail.svg" alt="" />
           </a>
         </section>
-        <section class="mobile-only">
+        <section class="mobile-only" id="ham">
           <img
             src="assets/mobile/ham.svg"
             alt=""
