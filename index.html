@@ -27,6 +27,24 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <section class="mobile-menu">
+      <img src="assets/mobile/x.svg" alt="" onclick="hideMobileMenu()" id="x"/>
+      <ul>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#projects-section">Portfolio</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#about-section">About</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-menu-items" onclick="hideMobileMenu()">
+          <a href="#contact-section">Contact</a>
+        </li>
+        <li><hr /></li>
+      </ul>
+    </section>
+    <div class="menu-footer"><img src="assets/mobile/line.svg" alt="" /></div>
     <header>
       <nav class="toolbar">
         <a href="#" class="left-menu-item">My Logo</a>
@@ -43,10 +61,13 @@
             <img src="assets/desktop/mail.svg" alt="" />
           </a>
         </section>
-        <section class="mobile-only">
-          <a href="#"
-            ><img src="assets/mobile/ham.svg" alt="" class="right-menu-item"
-          /></a>
+        <section class="mobile-only" id="ham">
+          <img
+            src="assets/mobile/ham.svg"
+            alt=""
+            class="right-menu-item"
+            onclick="showMobileMenu()"
+          />
         </section>
       </nav>
     </header>
@@ -320,5 +341,6 @@
         <img src="assets/mobile/line.svg" alt="" class="black-line" />
       </footer>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
