@@ -4,12 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -223,6 +217,7 @@ p {
 .last-project-items > li {
   border: 1px solid #8993a4;
   padding: 10px 12px;
+  margin-right: 3%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -306,6 +301,7 @@ p {
   margin-left: 24px;
   margin-right: 0;
   margin-top: 0;
+  margin-top: 2px;
 }
 
 .other-projects ul > li {
@@ -329,7 +325,6 @@ p {
 }
 
 .other-projects .title-post {
-  margin-bottom: 12px;
   margin-left: 40px;
   text-align: left;
   margin-top: 140px;
@@ -339,6 +334,8 @@ p {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  position: relative;
+  bottom: 10px;
 }
 
 .other-projects .supporting-text {
@@ -351,6 +348,121 @@ p {
   margin-left: 40px;
   margin-right: 40px;
   color: #fff;
+}
+
+/* ----------------- Popup Mobile ---------------- */
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 343px;
+  height: 718px;
+  margin-left: 4%;
+  top: 60px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  z-index: 3;
+}
+
+.popup #x-popup {
+  width: 12px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.popup #x-popup {
+  cursor: pointer;
+}
+
+.popup .image {
+  position: absolute;
+  width: 311px;
+  margin-left: 16px;
+  margin-top: 190px;
+}
+
+.popup h3 {
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popup ul {
+  position: absolute;
+  top: 130px;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.popup li {
+  border: 1px solid #c4cdde;
+  margin-right: 10px;
+  padding: 10px 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.popup p {
+  position: absolute;
+  left: 16px;
+  top: 434px;
+  width: 311px;
+  margin-right: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popup-button {
+  height: 48px;
+  background: #ff6b00;
+  color: #ffffff;
+  display: inline;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+  padding-left: 12px;
+  padding-right: 11%;
+  bottom: 20px;
+}
+
+.live-button {
+  background-image: url(/MyPortfolio/assets/common/live-button.svg);
+  width: 134px;
+  position: absolute;
+  left: 16px;
+}
+
+.source-button {
+  background-image: url(/MyPortfolio/assets/common/source-button.svg);
+  width: 159px;
+  position: absolute;
+  right: 15px;
 }
 
 /* ----------------- About Me Mobile ---------------- */
@@ -548,8 +660,13 @@ textarea::-webkit-input-placeholder {
 
 /* ----------------- Button Behaviour ---------------- */
 
+.my-buttons {
+  border: none;
+}
+
 .my-buttons:hover {
   background: #fff5e1;
+
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -864,6 +981,7 @@ textarea::-webkit-input-placeholder {
     background: #ff6b00;
     margin-left: auto;
     margin-right: auto;
+    display: none;
   }
 
   .other-projects-item > ul > li {
