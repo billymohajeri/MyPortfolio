@@ -616,10 +616,8 @@ textarea::-webkit-input-placeholder {
   color: #3c3a39;
 }
 
-.contact-flex > form > button {
+.contact-flex > form button {
   border: none;
-  margin-top: 24px;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 124px;
   display: block;
@@ -633,6 +631,11 @@ textarea::-webkit-input-placeholder {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.contact-flex > form div {
+  display: flex;
+  margin-left: 24px;
 }
 
 .gray-line {
@@ -1312,10 +1315,19 @@ textarea::-webkit-input-placeholder {
     border: none;
     margin-top: 24px;
     margin-left: 0;
+    margin-right: 10px;
     width: 122px;
     height: 48px;
     background: #f55800;
     color: #fff;
+  }
+
+  .contact-flex > form div {
+    display: flex;
+    height: 12%;
+    width: 85%;
+    padding: 0;
+    gap: 12px;
   }
 
   .gray-line-desktop {

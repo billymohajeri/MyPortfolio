@@ -74,6 +74,9 @@ const otherProjects = [
   },
 ];
 
+// let userInputsArr = [];
+// let userInputsObj = {};
+
 function showPopup() {
   document.querySelector('.popup').style.display = 'flex';
   document.querySelector('.grid-container').style.filter = 'blur(5px)';
@@ -213,14 +216,44 @@ function hideMobileMenu() {
 ham.addEventListener('click', showMobileMenu());
 x.addEventListener('click', hideMobileMenu());
 
+/* ----------------- Preserve data in the browser ---------------- */
+
+function saveToLocalStorage(n, e, c) {
+  const myobj = { name: n, email: e, comment: c };
+  localStorage.setItem(1, JSON.stringify(myobj));
+}
+
 /* ----------------- Validate Contact Form ---------------- */
 
 const form = document.getElementById('contact-form');
 const label = document.getElementById('error-label');
+const fullName = form.elements[0];
 const email = form.elements[1];
+const comment = form.elements[2];
 form.onsubmit = (event) => {
   if (email.value !== email.value.toLowerCase()) {
     label.innerText = 'Email should be in lowercase!';
     event.preventDefault();
+  } else {
+    saveToLocalStorage(fullName.value, email.value, comment.value);
   }
 };
+
+/* ----------------- Load data to the browser ---------------- */
+
+const savedDataObj = JSON.parse(localStorage.getItem(1));
+if (savedDataObj !== null) {
+  fullName.value = savedDataObj.name;
+  email.value = savedDataObj.email;
+  comment.value = savedDataObj.comment;
+}
+
+const resetFunc = () => {
+  fullName.value = '';
+  email.value = '';
+  comment.value = '';
+  localStorage.clear();
+};
+
+const resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', resetFunc);
