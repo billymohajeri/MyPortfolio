@@ -1248,4 +1248,27 @@ textarea::-webkit-input-placeholder {
   }
 
   /* ----------------- Popup Desktop ---------------- */
+  .popup {
+    display: none;
+    position: fixed;
+    width: 1156px;
+    height: 631px;
+    margin-left: 142px;
+    /* top: 60px; */
+    background: #fff;
+    /* background-color: #091e42; */
+    border: 1px solid #ebecf0;
+    z-index: 3;
+  }
+
+  .popup #x-popup {
+    width: 12px;
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+
 }
+
