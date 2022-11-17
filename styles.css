@@ -1273,6 +1273,14 @@ textarea::-webkit-input-placeholder {
     margin-right: 1vw;
   }
 
+  #error-label {
+    color: crimson;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    padding: 0;
+  }
+
   .text-area::-webkit-input-placeholder {
     color: #3c3a39;
   }
