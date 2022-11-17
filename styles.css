@@ -278,9 +278,8 @@ p {
   display: none;
   position: fixed;
   width: 343px;
-  height: 718px;
+  height: 65%;
   margin-left: 4%;
-  top: 60px;
   background: #fff;
   border: 1px solid #dfe1e6;
   z-index: 3;
@@ -804,9 +803,8 @@ textarea::-webkit-input-placeholder {
 
   .popup {
     display: none;
-    position: fixed;
     width: 1156px;
-    height: 631px;
+    height: 57%;
     margin-left: 142px;
     background: #fff;
     border: 1px solid #ebecf0;
@@ -823,8 +821,8 @@ textarea::-webkit-input-placeholder {
 
   .popup .image {
     position: absolute;
-    bottom: 27px;
-    width: 600px;
+    width: 55vh;
+    max-width: 600px;
     margin-left: 24px;
     margin-top: 156px;
   }
