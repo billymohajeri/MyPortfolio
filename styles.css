@@ -311,6 +311,7 @@ p {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  padding-right: 100px;
 }
 
 .popup ul {
@@ -806,7 +807,7 @@ textarea::-webkit-input-placeholder {
     height: 1890px;
     width: 1440px;
     width: 100%;
-    width: auto;
+    /* width: auto; */
     max-width: 1440px;
     margin-top: -40px;
     align-items: center;
@@ -870,7 +871,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .last-project-image:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-duration: 2s;
     opacity: 100%;
   }
@@ -935,32 +936,41 @@ textarea::-webkit-input-placeholder {
 
   .other-projects {
     display: grid;
-    overflow: auto;
-    grid-template-columns: auto auto auto;
+    gap: 24px;
+    /* overflow: auto; */
+    grid-template-columns: 370px 370px 370px;
+
+    margin-left: 10%;
     padding-top: 24px;
     max-width: 1440px;
     width: 100%;
   }
 
-  .project1 {
+  .project1,
+  .project4 {
     background-image: url(assets/desktop/project1.svg);
+    background-size: cover;
   }
 
-  .project2 {
+  .project2,
+  .project5 {
     background-image: url(assets/desktop/project2.svg);
+    background-size: cover;
   }
 
-  .project3 {
+  .project3,
+  .project6 {
     background-image: url(assets/desktop/project3.svg);
+    background-size: cover;
   }
 
   .other-projects-item {
     background-repeat: no-repeat;
-    padding: 16px;
+    /* padding: 16px; */
     margin: 0;
   }
 
-  .other-projects-item button {
+  .other-projects-item > button {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -969,7 +979,11 @@ textarea::-webkit-input-placeholder {
     letter-spacing: 0.03em;
     color: #fff;
     height: 58px;
+    width: 370px;
     border: none;
+    position: relative;
+    bottom: -410px;
+
     background: #ff6b00;
     margin-left: auto;
     margin-right: auto;
@@ -991,16 +1005,17 @@ textarea::-webkit-input-placeholder {
 
   .other-projects-item > ul {
     margin-bottom: 22px;
-    margin-left: 40px;
+    margin-left: 16px;
     margin-top: 0;
     padding: 0;
   }
 
   .other-projects-item > .title-post {
     margin-bottom: 12px;
-    margin-left: 40px;
+    margin-left: 16px;
+    padding-right: 100px;
     text-align: left;
-    margin-top: 140px;
+    margin-top: 200px;
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
@@ -1015,10 +1030,30 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 12px;
-    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-left: 16px;
     margin-right: 40px;
     color: #fff;
+  }
+
+  .other-projects-item:hover button {
+    display: block;
+  }
+
+  .other-projects-item:hover ul {
+    display: none;
+  }
+
+  .other-projects-item:hover .title-post {
+    display: none;
+  }
+
+  .other-projects-item:hover .supporting-text {
+    display: none;
+  }
+
+  .other-projects-item:hover {
+    background-image: url(assets/desktop/project1-highlight.svg);
   }
 
   /* ----------------- About Me Desktop ---------------- */
@@ -1211,4 +1246,6 @@ textarea::-webkit-input-placeholder {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* ----------------- Popup Desktop ---------------- */
 }
