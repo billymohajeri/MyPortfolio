@@ -18,6 +18,14 @@ p {
 
 /* ----------------- Mobile ⬇️ ---------------- */
 
+#error-label {
+  color: crimson;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
 .desktop-images,
 .desktop-only {
   display: none;

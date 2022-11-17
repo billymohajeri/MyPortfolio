@@ -185,7 +185,11 @@
             please get in touch.</span
           >
         </h2>
-        <form action="https://formspree.io/f/mlevordr" method="POST">
+        <form
+          action="https://formspree.io/f/mlevordr"
+          method="POST"
+          id="contact-form"
+        >
           <input
             type="text"
             name="name"
@@ -201,6 +205,7 @@
             class="normal-text-box"
             required
           />
+
           <textarea
             class="text-area"
             name="comment"
@@ -211,6 +216,7 @@
             maxlength="500"
             required
           ></textarea>
+          <label for="" id="error-label"> </label>
           <button type="submit" class="my-buttons">Get in touch</button>
         </form>
       </section>
