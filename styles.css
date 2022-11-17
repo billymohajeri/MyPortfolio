@@ -18,6 +18,14 @@ p {
 
 /* ----------------- Mobile ⬇️ ---------------- */
 
+#error-label {
+  color: crimson;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
 .desktop-images,
 .desktop-only {
   display: none;
@@ -1271,14 +1279,6 @@ textarea::-webkit-input-placeholder {
     font-size: 15px;
     padding-bottom: 14px;
     margin-right: 1vw;
-  }
-
-  #error-label {
-    color: crimson;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    margin-left: 30px;
-    padding: 0;
   }
 
   .text-area::-webkit-input-placeholder {

@@ -220,7 +220,6 @@ const label = document.getElementById('error-label');
 const email = form.elements[1];
 form.onsubmit = (event) => {
   if (email.value !== email.value.toLowerCase()) {
-    console.log('upper');
     label.innerText = 'Email should be in lowercase!';
     event.preventDefault();
   }
