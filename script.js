@@ -219,8 +219,8 @@ x.addEventListener('click', hideMobileMenu());
 /* ----------------- Preserve data in the browser ---------------- */
 
 function saveToLocalStorage(n, e, c) {
-  const myobj = { name: n, email: e, comment: c };
-  localStorage.setItem(1, JSON.stringify(myobj));
+  const dataObj = { name: n, email: e, comment: c };
+  localStorage.setItem(1, JSON.stringify(dataObj));
 }
 
 /* ----------------- Validate Contact Form ---------------- */
@@ -247,7 +247,7 @@ if (savedDataObj !== null) {
   email.value = savedDataObj.email;
   comment.value = savedDataObj.comment;
 }
-
+/* ----------------- Reset form ---------------- */
 const resetFunc = () => {
   fullName.value = '';
   email.value = '';
@@ -257,3 +257,4 @@ const resetFunc = () => {
 
 const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', resetFunc);
+
