@@ -9,13 +9,13 @@ function hidePopup() {
 
 const otherProjects = [
   {
-    name: 'Multi Post Stories',
+    name: 'To Do list',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: 'assets/mobile/last-project-mobile.svg',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+      'In this project, I built a simple HTML list of To Do tasks. This simple web page has been built using webpack and served by a webpack dev server.',
+    image: './assets/mobile/todo-list-project-mobile.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://billymohajeri.github.io/To-Do-list/dist/',
+    sourceLink: 'https://github.com/billymohajeri/To-Do-list',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -99,6 +99,8 @@ popupImage.className = 'image';
 const popupDescription = document.createElement('p');
 const liveButton = document.createElement('button');
 liveButton.innerText = 'See Live';
+// liveButton.onclick = alert(111);
+// window.open(  otherProjects[0].liveLink,  '_blank',  'resizable=yes');
 liveButton.className = 'my-buttons live-button popup-button';
 const sourceButton = document.createElement('button');
 sourceButton.innerText = 'See Source';
@@ -136,11 +138,11 @@ function bindPopup(projectNumber) {
 const lastProjectsArticle = document.querySelector('.last-project');
 const imgMobile = document.createElement('img');
 imgMobile.className = 'last-project-image-mobile mobile-only';
-imgMobile.src = 'assets/mobile/last-project-mobile.svg';
+imgMobile.src = './assets/mobile/todo-list-project-mobile.png';
 imgMobile.alt = 'last project';
 const imgDesktop = document.createElement('img');
 imgDesktop.className = 'desktop-images last-project-image';
-imgDesktop.src = 'assets/desktop/last-project-desktop.svg';
+imgDesktop.src = './assets/desktop/todo-list-project-desktop.png';
 imgDesktop.alt = 'last project desktop';
 const lastProjectInnerSection = document.createElement('section');
 lastProjectsArticle.append(imgMobile, imgDesktop, lastProjectInnerSection);
@@ -215,6 +217,12 @@ function hideMobileMenu() {
 
 ham.addEventListener('click', showMobileMenu());
 x.addEventListener('click', hideMobileMenu());
+liveButton.addEventListener('click', () => {
+  window.open(otherProjects[0].liveLink);
+});
+sourceButton.addEventListener('click', () => {
+  window.open(otherProjects[0].sourceLink);
+});
 
 /* ----------------- Preserve data in the browser ---------------- */
 
